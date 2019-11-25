@@ -5,6 +5,7 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc -p tsconfig.prod.json",
     "dev": "tsc -p tsconfig.dev.json",
     "docs": "typedoc --out ./docs/ ./src/index.ts --mode file --theme markdown --name tezos-wallet",
