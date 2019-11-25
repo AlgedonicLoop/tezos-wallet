@@ -81,8 +81,8 @@ export const transaction = <T extends State>(selector: (state: T) => Transaction
         source: state.wallet.publicKeyHash,
         fee: parseAmount(state.transaction.fee).toString(),
         // extra gas is for safety 
-        gas_limit: withTestRun ? state.constants.hard_gas_limit_per_operation : "50000",
-        storage_limit: "257",
+        gas_limit: withTestRun ? state.constants.hard_gas_limit_per_operation : "80000",
+        storage_limit: "457",
         counter: (++state.counter).toString()
       })
     }
@@ -94,8 +94,8 @@ export const transaction = <T extends State>(selector: (state: T) => Transaction
       amount: parseAmount(state.transaction.amount).toString(),
       fee: parseAmount(state.transaction.fee).toString(),
       // extra gas is for safety 
-      gas_limit: withTestRun ? state.constants.hard_gas_limit_per_operation : "50000",
-      storage_limit: "257",
+      gas_limit: withTestRun ? state.constants.hard_gas_limit_per_operation : "800000",
+      storage_limit: "457",
       counter: (++state.counter).toString()
     };
 
