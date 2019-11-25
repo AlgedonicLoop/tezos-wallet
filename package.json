@@ -16,7 +16,8 @@
   "files": [
     "docs/**/*",
     "examples/**/*",
-    "lib/**/*"
+    "lib/**/*",
+    "src/**/*"
   ],
   "dependencies": {
     "bip39": "2.5.0",
